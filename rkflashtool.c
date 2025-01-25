@@ -145,7 +145,7 @@ static const char* const manufacturer[] = {   /* NAND Manufacturers */
 };
 #define MAX_NAND_ID (sizeof manufacturer / sizeof(char *))
 
-static uint8_t cmd[31], res[13], buf[RKFT_BLOCKSIZE];
+static uint8_t cmd[31], res[13], buf[0x4200];
 static uint8_t ibuf[RKFT_IDB_BLOCKSIZE];
 static libusb_context *c;
 static libusb_device_handle *h = NULL;
